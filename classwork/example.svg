@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<svg id="svg-img" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+
+    <defs>
+
+        <style><![CDATA[
+            .sprite { display: none; }
+            .sprite:target { display: inline; }
+          ]]>
+        </style>
+
+    </defs>
+
+
+    <g class="sprite" id="roof">
+        <polygon points='180,300 350,200 520,300' stroke="red" fill="chocolate"/>
+    </g>
+    <g class="sprite" id="house-body">
+        <rect x="200" y="300" stroke='#FF0000' fill="yellow"/>
+    </g>
+    <g class="sprite" id="house-foundament">
+        <rect x="194" y="450" stroke='#FF0000' fill="yellow"/>
+    </g>
+    <g class="sprite" id="ground">
+        <rect x="0" y="460" width="700" height="40" stroke='green' fill="greenyellow"/>
+    </g>
+
+
+
+
+    <!--<g style="fill-opacity:1;">-->
+        <!--<line x1="0" y1="0" x2="10" y2="10" stroke="red" stroke-width="1" />-->
+        <!--<ellipse cx="5" cy="5" rx="4" ry="2" fill="yellow" stroke="blue" />-->
+    <!--</g>-->
+    <!--<g style="fill-opacity:1;">-->
+    <!--</g>-->
+    <!--<polygon points='5,125 80,140 15,155' stroke="red" fill="yellow"/>-->
+</svg>

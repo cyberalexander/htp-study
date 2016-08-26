@@ -1,0 +1,95 @@
+h1, h2, h3, h4 {
+    text-align: center;
+    font-family: 'Ruslan Display', cursive;
+    text-shadow: 2px 2px 2px gray, 0 0 0.5em blue;
+}
+article h3 {
+    margin-top: 0;
+    padding-top: 10px;
+}
+div.nav{
+    float: left;
+    width: 15em;
+}
+div.article-content {
+    margin-left: 15em;
+}
+div article {
+    margin-bottom: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+div.article-content img {
+    float: left;
+    width: 16em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+ul li {
+    font-family: 'Underdog', cursive;
+    line-height: 2em;
+}
+div.header, div.footer {
+    background-color: cyan;
+    padding: 1%;
+}
+div.footer {
+    clear: both;
+}
+div.main-container {
+    background: url('rugby-ball.png') repeat-y right;
+}
+div.empty-container{
+    clear: both;
+}
+div.container {
+    background: url('yellow.png') 0em top repeat-y;
+    background-size: 15em;
+}
+div.nav ul li:hover{
+    background-color: white;
+}
+
+
+@media screen and (max-width:45em){
+    div.container {
+        background: none;
+    }
+    div.nav{
+        float: none;
+        width: 100%;
+        padding: 1.33em 0 1.33em 0;
+        background: url('yellow.png') 0em top repeat;
+    }
+    div.nav h4{
+        margin-top: 0;
+    }
+    div.nav ul li{
+        display: inline-block;
+        list-style-type: none;
+        white-space: nowrap;
+        padding: 3px;
+        font-family: 'Underdog';
+        border: dotted red 2px;
+    }
+    div.nav ul li{
+        line-height: 1.5em;
+        margin-bottom: 0.3em;
+    }
+    div.article-content {
+        margin-left: 0;
+    }
+    div.article-content article{
+        background: url('rugby-ball.png') bottom left repeat-x;
+        margin: 1em 0.2em 0.5em 0.2em;
+    }
+    div.main-container {
+        background: none;
+    }
+    div.article-content img {
+        float: left;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0.5em;
+    }
+}

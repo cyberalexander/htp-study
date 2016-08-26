@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Links</title>
+    <link rel="stylesheet" href="links.css">
+</head>
+<body>
+    <div class="firstExample">
+        <h3>FIRST EXAMPLE (table)</h3>
+        <p>
+           <span>Solution: </span>
+            применил табличную верстку. Элементы выровняны в строку, потому что указаны в
+            одной строке таблицы. Разделитель задан селектором <b>td:not(:last-child)</b>,
+            свойство: <b>border-right: solid 3px red;</b>
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <a href="#">FIRST LINK</a>
+                </td>
+                <td>
+                    <a href="#">SECOND LINK</a>
+                </td>
+                <td>
+                    <a href="#">THIRD LINK</a>
+                </td>
+                <td>
+                    <a href="#">FOURTH LINK</a>
+                </td>
+                <td>
+                    <a href="#">FIFTH LINK</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <hr/>
+    <div class="secondExample">
+        <h3>SECOND EXAMPLE (list)</h3>
+        <p>
+            <span>Solution: </span>
+            применил список, задал ему свойство <b>display: inline-block;</b>, чтобы выставить
+            элементы в строку, а также <b>list-style: none;</b>, чтобы список не отображался
+            как список. Разделитель задан селектором <b>li:not(:first-child)</b>,
+            свойство: <b>border-left: solid 3px red;</b>
+        </p>
+        <ul>
+            <li>
+                <a href="#">FIRST LINK</a>
+            </li>
+            <li>
+                <a href="#">SECOND LINK</a>
+            </li>
+            <li>
+                <a href="#">THIRD LINK</a>
+            </li>
+            <li>
+                <a href="#">FOURTH LINK</a>
+            </li>
+            <li>
+                <a href="#">FIFTH LINK</a>
+            </li>
+        </ul>
+    </div>
+    <hr/>
+    <div class="thirdExample">
+        <h3>THIRD EXAMPLE (Paragraphs)</h3>
+        <p>
+            <span>Solution: </span>
+            каждую ссылку поместил в отдельный параграф, затем для параграфов задал свойство <b>display: inline;</b>
+            с помощью селектора <b>div.thirdExample>div.container>p</b>, чтобы расположить параграфы в строку.
+            Разделитель задан селектором <b>div.thirdExample>div.container>p:nth-child(n+1):not(:last-child)</b>,
+            свойство: <b>border-right: solid 3px red;</b>
+        </p>
+        <div class="container">
+            <p>
+                <a href="#">FIRST LINK</a>
+            </p>
+            <p>
+                <a href="#">SECOND LINK</a>
+            </p>
+            <p>
+                <a href="#">THIRD LINK</a>
+            </p>
+            <p>
+                <a href="#">FOURTH LINK</a>
+            </p>
+            <p>
+                <a href="#">FIFTH LINK</a>
+            </p>
+        </div>
+    </div>
+    <hr/>
+    <div class="fourthExample">
+        <h3>FOURTH EXAMPLE (div)</h3>
+        <p>
+            <span>Solution: </span>
+            применил блочную верстку. Она оказалась самой сложной для меня - не удалось добиться выравнивания
+            навигейшен-меню по-центру экрана. <span>Прошу Вашей помощи - помогите выровнять элементы
+            по-центру экрана, пожалуйста.</span> Вложил ссылки в отдельные div атрибуты, задал для div-ов свойство
+            <b>float: left;</b>, чтобы разместить их в одну линию. Разделитель задан селектором <b>div.fourthExample>div.container div[class*="Link"]:not(:last-child)</b>,
+            свойство: <b>border-right: solid 3px red;</b>
+        </p>
+        <div class="container">
+            <div>
+                <a href="#">FIRST LINK</a>
+            </div>
+            <div>
+                <a href="#">SECOND LINK</a>
+            </div>
+            <div>
+                <a href="#">SECOND LINK</a>
+            </div>
+            <div>
+                <a href="#">FOURTH LINK</a>
+            </div>
+            <div>
+                <a href="#">FIFTH LINK</a>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <hr/>
+    <div class="fifthExample">
+        <h3>FIFTH EXAMPLE (one paragraph)</h3>
+        <p>
+            <span>Solution: </span>
+            Здесь как и в третьем примере использовал атирибут <b>p</b>, только на этот раз
+            все ссылки положил в один параграф, и оперировал с бордерами непосредственно у самих ссылок.
+            Разделитель задан селектором <b>div.fifthExample>p.container>a:nth-child(-1n+4)</b>,
+            свойство: <b>border-right: solid 3px red;</b>
+        </p>
+        <p class="container">
+            <a href="#">FIRST LINK</a>
+            <a href="#">SECOND LINK</a>
+            <a href="#">SECOND LINK</a>
+            <a href="#">FOURTH LINK</a>
+            <a href="#">FIFTH LINK</a>
+        </p>
+    </div>
+    <hr/>
+</body>
+</html>

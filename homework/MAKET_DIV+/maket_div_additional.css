@@ -1,0 +1,152 @@
+body{
+    /*background-color: ghostwhite;*/
+    font-family: "Apple Chancery", "Apple Braille", Arial, sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: 'Ruslan Display', cursive;
+    text-align: center;
+    text-shadow: 2px 2px 2px gray, 0 0 0.5em blue;
+}
+div.container{position: relative; left: 0; top: 0;}
+/*Домашнее задание №8b-----------------------------------------------*/
+#entering-link-container{
+    background-color: greenyellow;
+    border: solid 0.2em slategrey;
+    border-radius: 0.5em;
+    box-shadow: 0.4em 0.4em 0.5em dimgray;
+    /*color: dimgray;*/
+    height: 3em;
+    padding: 0.5em;
+    position: fixed;
+    right: 3em;
+    text-align: center;
+    top: 2em;
+    width: 8em;
+}
+#entering-link-container a {
+    line-height: 1px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+/*END - Домашнее задание №8b-----------------------------------------*/
+div.main-container {
+    background: url('yellow.png') top left repeat-y;
+    background-size: 20%;
+}
+div.outer-container{
+    background: url('adv.jpg') top right repeat-y;
+    background-size: 200px;
+}
+div.inner-container{
+    background: url('rugby-ball.png') top left no-repeat,
+                url('rugby-ball.png') top right no-repeat,
+                url('rugby-ball.png') 17% 0 no-repeat,
+                url('rugby-ball.png') bottom left no-repeat,
+                url('rugby-ball.png') bottom right no-repeat,
+                url('rugby-ball.png') 17% 100% no-repeat,
+                url('1234.png') bottom right no-repeat,
+                url('1234.png') top right no-repeat;
+}
+.middle-bg-balls{
+    background: url('rugby-ball.png') top left no-repeat,
+                url('rugby-ball.png') top right no-repeat,
+                url('rugby-ball.png') bottom left no-repeat,
+                url('rugby-ball.png') bottom right no-repeat;
+    padding: 0.5em;
+}
+nav{
+    float: left;
+    width: 20%;
+}
+article {
+    background: floralwhite;
+    margin-left: 20%;
+    margin-right: 200px;
+}
+aside{
+    float: right;
+    padding: 0.3em;
+    text-align: center;
+    width: 200px;
+}
+article h3 {
+     margin-top: 0;
+     padding-top: 10px;
+}
+article img {
+    float: left;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+    width: 17em;
+}
+ul li {
+    font-family: 'Underdog', cursive;
+    line-height: 2em;
+}
+header, footer {
+    background-color: cyan;
+    padding: 0.5em;
+    clear: both;
+}
+div.empty-container{
+    float: none;
+    clear: both;
+}
+div.inner-container aside:last-of-type{
+    display: none;
+}
+
+@media screen and (max-width: 45em){
+    #entering-link-container{
+        right: 1.5em;
+        top: 3em;
+    }
+    div.inner-container aside:last-of-type{
+        display: block;
+    }
+    div.inner-container aside:first-of-type{
+        display: none;
+    }
+    nav, aside, article{
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 0.3em;
+    }
+    nav{
+        background: url('rugby-ball.png') top left no-repeat,
+                    url('rugby-ball.png') top right no-repeat,
+                    url('rugby-ball.png') bottom left no-repeat,
+                    url('rugby-ball.png') bottom right no-repeat;
+        overflow: auto;
+    }
+    aside{
+        background: url('adv.jpg') bottom left repeat;
+        background-position: 0px 650px;
+    }
+    aside a{
+        padding: 0.4em;
+    }
+    div.main-container {
+        background: url('yellow.png') top left repeat;
+    }
+    div.outer-container{
+        background: transparent;
+    }
+    article img {
+        float: none;
+        margin-bottom: 0.5em;
+        margin-right: 0.5em;
+        width: 100%;
+    }
+    ul li {
+        display: inline-block;
+        margin: 0.2em;
+        font-family: 'Underdog', cursive;
+        line-height: 2em;
+    }
+    div.inner-container {
+        background: none;
+    }
+}
+

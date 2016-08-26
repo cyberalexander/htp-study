@@ -1,0 +1,28 @@
+/* ---------------------------------------------DEFAULT---------------------------------- */
+table.CHESS {
+    border-collapse: collapse;
+}
+table.CHESS td {
+    width: 50px;
+    height: 50px;
+    border: solid gray 1px;
+}
+/* ----------------------------------MY CUSTOMIZATION----------------------------------- */
+/*td:hover{*/
+    /*cursor: progress;*/
+    /*background-color: red;*/
+/*}*/
+/* --------------------------STYLES FOR OUTER BORDERS OF TABLE-------------------------- */
+table.CHESS tr:first-child>td,
+table.CHESS tr:last-child>td,
+table.CHESS tr>td:first-child,
+table.CHESS tr>td:last-child{
+    background-color: greenyellow !important;
+    width: 25px;
+    height: 25px;
+}
+/* -----------------------------STYLES FOR INNER CELLS OF TABLE-------------------------- */
+table.CHESS tr:nth-child(even) td:nth-child(odd),
+table.CHESS tr:nth-child(odd) td:nth-child(even){
+    background-color: black;
+}

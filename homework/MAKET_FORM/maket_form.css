@@ -1,0 +1,73 @@
+body{
+    background-color: whitesmoke;
+}
+.container{
+    margin: 1em;
+}
+#publicationRadioList ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#publicationRadioList ul li {
+    display: inline-block;
+}
+#publicationRadioList ul li:not(:last-child){
+    margin-right: 0.3em;
+}
+form div:nth-child(odd){
+    width: 11em;
+    float: left;
+    clear: both;
+}
+form div:not(#content){
+    margin-bottom: 0.2em;
+}
+#nameOfArticleInput,
+#typeOfArticleList,
+#publicationRadioList,
+#allowCommentaryCheckBox{
+    margin-left: 11em;
+}
+#contentField{
+    clear: both;
+}
+textarea{
+    width: 100%;
+    background: white url('batman.png') center center no-repeat;
+    background-size: 12em;
+    border: 1px solid #888;
+}
+#nameOfArticleInput input{
+    width: 100%;
+}
+
+/* additional customiztion */
+input:focus{
+    background-color: #eeeeee;
+}
+
+@media screen and (max-width: 35em) {
+    form div:nth-child(odd):not(#allowCommentary){
+        width: 11em;
+        float: none;
+        clear: both;
+    }
+    form div:nth-child(even):not(#content){
+        margin-bottom: 0.5em;
+    }
+    #nameOfArticleInput,
+    #typeOfArticleList,
+    #publicationRadioList,
+    #allowCommentaryCheckBox{
+        margin-left: 0;
+    }
+    #publicationRadioList ul li {
+        display: block;
+    }
+    #nameOfArticleInput input,
+    #typeOfArticleList select{
+        width: 100%;
+    }
+
+}

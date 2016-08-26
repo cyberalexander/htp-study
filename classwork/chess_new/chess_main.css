@@ -1,0 +1,88 @@
+body{
+    background: url("blur-blurred-background.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: 'Underdog', cursive;
+}
+.inner-cleaner{
+    clear: both;
+}
+.container{
+    display:inline-block;
+    margin-top: 3%;
+    width: 80%;
+    overflow: hidden;
+}
+.header, .footer{
+    clear: both;
+    text-align: center;
+}
+.header h1{
+    font-family: 'Ruslan Display', cursive;
+    text-shadow: 2px 2px 3px greenyellow, 0 0.2em 0.3em black;
+
+}
+.navigation{
+    width: 15%;
+    float: left;
+    overflow: auto;
+    text-align: left;
+}
+.navigation ul li{
+    margin-bottom: 10px;
+}
+.advertising{
+    width: 200px;
+    float: right;
+}
+.content-outer{
+    background: url("nav_and_content_bg.png") 15% top repeat-y;
+}
+.content-inner{
+    background: url("adv.jpg") right top repeat-y;
+}
+.main-container {
+    margin-left: 15%;
+    margin-right: 200px;
+    padding: 10px;
+    text-align: left;
+}
+
+.main-container .name{
+    color: dimgray;
+    text-align: center;
+    font-size: 18pt;
+    font-family: 'Ruslan Display', cursive;
+    text-shadow: 2px 2px 3px greenyellow, 0 0 0.5em black;
+}
+.main-container .birth-date{
+    color: forestgreen;
+    margin-bottom: 5px;
+}
+.main-container .champions-date{
+    color: red;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+.main-container .info-link{
+    font-weight: bolder;
+}
+
+.footer-navigation ul{
+    padding-left: 0px;
+}
+.footer-navigation ul li{
+    list-style-type: none;
+    display: inline;
+    margin: 3px;
+}
+.footer-navigation ul li>a>span{
+    white-space: nowrap;
+}
+.advertising a{
+    margin: 5px;
+}
+.advertising>h4{
+    text-shadow: 2px 2px 3px greenyellow, 0 0 0.5em black;
+}

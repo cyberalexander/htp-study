@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHESS TABLE</title>
+    <link rel="stylesheet" href="chess_css.css">
+</head>
+<body>
+    <table class='CHESS'>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+    <div class="info">
+        <h3>Описание</h3>
+        <p>
+            Задачу решил следующим образом: <br/>
+            1) Сконфигурировал стили для рамки шахматной доски: <br/>
+            - table.CHESS tr:first-child>td - верхняя рамка <br/>
+            - table.CHESS tr:last-child>td - нижняя рамка <br/>
+            - table.CHESS tr>td:first-child - левая граница рамки <br/>
+            - table.CHESS tr>td:last-child - правая граница рамки <br/>
+            2) Сконфигурировал стили шашечек шахматной доски: <br/>
+            - table.CHESS tr:nth-child(even) td:nth-child(odd) - все нечетные ячейки в четных строках таблицы, <br/>
+            - table.CHESS tr:nth-child(odd) td:nth-child(even) - все четные ячейки в нечетных строках таблицы, <br/>
+        </p>
+        <h5>Сложности</h5>
+        <p>
+            - Была сложность с заданием высоты для верхней и нижней границ рамки. Долго не мог перетереть
+            высоту, заданную "по-умолчанию" в селекторе <b>table.CHESS td</b>, но эксперименты со сложными
+            более точными селекторами, имеющими больший приоритет дали свои плоды
+            (<b>table.CHESS tr:first-child>td</b> и <b>table.CHESS tr:last-child>td</b>). <br/>
+            - так же совершенно случайно вспомнил про параметр <b>!important</b>, когда долгое время
+            не мог понять, как не распространять стиль черных шашечек доски на рамку доски. В итоге
+            задал этот параметр для стиля background-color у рамки шахматной доски.
+        </p>
+    </div>
+</body>
+</html>

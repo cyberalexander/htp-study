@@ -1,0 +1,35 @@
+h1, h2, h3, h4 {
+    text-align: center;
+    font-family: 'Ruslan Display', cursive;
+    text-shadow: 2px 2px 2px gray, 0 0 0.5em blue;
+}
+table {
+    border-collapse: collapse;
+}
+td img {
+    float: left;
+    width: 16em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+ul li {
+    font-family: 'Underdog', cursive;
+    line-height: 2em;
+}
+td.navigation-menu {
+    width: 14em;
+    vertical-align: top;
+}
+td.article {
+    vertical-align: top;
+    background: #a3f59f url('rugby-ball.png') repeat-y right;
+}
+table tr:nth-child(odd) {
+    background-color: cyan;
+}
+table tr:nth-child(even) td:first-child {
+    background-color: yellow;
+}
+article {
+    margin: 1em;
+}

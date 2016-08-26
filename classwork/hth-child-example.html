@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NTH-CHILD</title>
+    <style>
+        div:not(.container){
+            margin: 5px;
+            padding: 5px;
+            border: solid 2px green;
+        }
+        div.container>div:nth-child(2n+2){
+            background-color: yellow;
+        }
+        div#firstContainer{
+            width: 150px;
+            height: 150px;
+            overflow: auto;
+        }
+        div#outer-sprit {
+            overflow: auto;
+        }
+        div#sprit{
+            display: inline-block;
+            float: left;
+            background-image: url("../images/sprite-bird.jpg");
+            background-repeat: no-repeat;
+            background-position: -342px -467px;
+
+            width: 150px;
+            height: 140px;
+            border: 0;
+        }
+        div#thirdContainer{
+            overflow: auto;
+        }
+        div#thirdContainer p{
+            border: solid 1px blue;
+            background: #a3f59f;
+            overflow: hidden;
+        }
+        div#thirdContainer img {
+            border: solid 1px red;
+            float: left;
+            margin: 2px;
+        }
+        div#thirdContainer img:first-child{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="firstContainer">
+        <img src="../images/ass.jpg" alt="">
+    </div>
+    <div id="outer-sprit">
+        <div id="sprit"></div>
+        Dolore dolorem facere magnam ut! Eos, error, sunt. Aliquid eaque illum incidunt molestias sint. Distinctio enim
+        exercitationem iste itaque officiis quae reprehenderit! Aliquam amet culpa dolor ipsa ipsum placeat veritatis.
+    </div>
+    <div id="thirdContainer">
+        <img src="../images/giphy.gif" alt="">
+        <img src="../images/Turtle.png" alt="">
+        <p>
+            A aliquam assumenda aut commodi consectetur eius eligendi eos expedita, hic id illo incidunt laborum
+            necessitatibus non numquam omnis porro possimus quasi ratione rerum saepe sit vitae voluptate voluptatem
+            necessitatibus non numquam omnis porro possimus quasi ratione rerum saepe sit vitae voluptate voluptatem
+            necessitatibus non numquam omnis porro possimus quasi ratione rerum saepe sit vitae voluptate voluptatem
+            necessitatibus non numquam omnis porro possimus quasi ratione rerum saepe sit vitae voluptate voluptatem
+            voluptatum?
+        </p>
+    </div>
+    <div>
+        <div style="border: solid red 1px; padding: 3px; overflow: hidden">
+            <img src="../images/icecreams.jpeg" alt="" style="float: left; margin: 4px; width: 100px">
+            <div style="border: solid blue 1px">
+                fugiat iste necessitatibus nesciunt odit praesentium ut? Accusantium adipisci
+                corporis exercitationem ipsa minus
+            </div>
+            <!--<div style="clear: both; border: solid green 1px"></div>-->
+        </div>
+    </div>
+    <div>Ab adipisci at consequatur deserunt dolorem error illo laborum odit ratione repellat, reprehenderit rerum,
+        veniam veritatis! Doloribus illo magnam nisi qui ut! Animi, at eius ipsum maxime omnis perferendis rerum.
+    </div>
+    <div>Adipisci aliquid at aut cumque earum eveniet illo, iste magni maxime minus molestiae molestias nam
+        necessitatibus nemo, nobis nostrum obcaecati, optio possimus praesentium rem rerum sed vitae. Dolore, quisquam
+        sed.
+    </div>
+    <div>Corporis in labore maxime necessitatibus optio sint, soluta totam! Adipisci consequatur culpa cumque dolore
+        error excepturi in incidunt iure maxime modi nesciunt praesentium quam, quasi suscipit, tempore temporibus,
+        totam veritatis?
+    </div>
+    <div>A asperiores aut delectus dolores doloribus error, fugit illo in ipsa ipsum minus quos repellendus similique
+        totam veniam! Atque consectetur exercitationem explicabo ipsam molestiae nemo non pariatur perspiciatis
+        quibusdam ut!
+    </div>
+    <div>Accusamus ad, alias aliquid assumenda, aut commodi consequatur dignissimos dolor dolore eius enim eum eveniet
+        facere fugiat incidunt modi nemo non odio omnis quas quia sunt tenetur ut vel voluptatum.
+    </div>
+    <div>Accusamus adipisci, amet debitis deleniti deserunt, earum error est hic laboriosam maxime nemo nesciunt numquam
+        odio optio quae quas ratione recusandae repellat similique vitae. Consectetur debitis labore molestiae quibusdam
+        vel.
+    </div>
+    <div>Consequatur dolorem harum molestiae nemo obcaecati repellat, sapiente veritatis? At blanditiis consequatur cum
+        deserunt doloremque error esse facilis illo, illum, laboriosam magnam molestiae nihil, odio quaerat quidem
+        similique sunt veniam.
+    </div>
+    <div>A cumque deserunt magnam perspiciatis quisquam reprehenderit! Autem, delectus ducimus in incidunt ipsum
+        laboriosam modi obcaecati quibusdam quos veritatis. Amet harum laborum officia rem? Cum eos explicabo itaque
+        labore reiciendis!
+    </div>
+    <div>Commodi consectetur corporis, dignissimos et neque veritatis voluptas. Accusamus architecto at dolor ducimus
+        hic impedit iure iusto labore, minima officia perferendis perspiciatis provident quaerat quidem quisquam ratione
+        sequi similique vero!
+    </div>
+    <div>Debitis optio, qui. Accusamus corporis cupiditate debitis dolorum ducimus explicabo harum in ipsum itaque,
+        laboriosam, molestiae neque nostrum perferendis, ratione reiciendis rem reprehenderit sapiente sit soluta
+        tenetur vitae voluptate voluptatum.
+    </div>
+    <div>Accusantium aliquid aperiam beatae blanditiis, consequuntur corporis dolorum, error esse eveniet explicabo hic
+        illo in ipsa ipsam molestiae nam nihil nostrum omnis possimus rerum sed sit soluta tenetur unde voluptatem.
+    </div>
+    <div>Aperiam architecto asperiores assumenda culpa deleniti dolores earum excepturi expedita ipsum iste itaque
+        mollitia nam nemo, odio officia possimus praesentium quae quam sed temporibus vitae voluptas voluptatibus? Nulla
+        obcaecati, possimus.
+    </div>
+    <div>Adipisci, architecto autem dolorem ipsa placeat veniam veritatis voluptatum. Alias amet earum ipsam maiores non
+        repellendus similique, ullam voluptates. A accusamus delectus deserunt enim eos maiores natus nobis quaerat rem.
+    </div>
+    <div>Cum debitis facere hic quasi sit. Alias dignissimos doloremque expedita facilis hic illo ipsam magnam nostrum,
+        quos tempora. Ab aliquid animi eaque fugiat modi molestias odit reprehenderit tenetur veniam voluptates.
+    </div>
+    <div>Eveniet ipsum quibusdam quidem rem? Deleniti iste nesciunt provident quaerat quis sapiente ut. Aliquam cumque
+        explicabo incidunt ipsam iste laboriosam modi quo reprehenderit sed. Aperiam dicta harum molestias numquam quam!
+    </div>
+    <div>Asperiores deleniti dicta hic itaque libero molestiae nostrum odio placeat porro praesentium repellendus rerum
+        sapiente similique, tenetur voluptatibus. A consequuntur dicta error exercitationem expedita fugit iste odit,
+        placeat quibusdam repellendus!
+    </div>
+</div>
+</body>
+</html>

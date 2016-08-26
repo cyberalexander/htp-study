@@ -1,0 +1,89 @@
+body{
+    background-color: ghostwhite;
+    font-family: "Times New Roman", "Arial Narrow", sans-serif;
+}
+p.name {
+    font-size: 22pt;
+    font-weight: bold;
+    margin-top: 1em;
+    opacity: 0.7;
+}
+p.date_of_birth {
+    font-size: 14pt;
+    color: green;
+    /* --- отладочная рамка, не увеличивает размер верстки и не занимает место --- */
+    outline: solid green 2px;
+}
+p.champions-date {
+    font-size: 14pt;
+    font-weight: bold;
+    color: red;
+}
+a[href^='http']::before{
+    content: url("extref.png");
+}
+p.article {
+    font-style: italic;
+    color: blue;
+}
+/*непосещенная ссылка*/
+a:link {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+a:visited {
+    text-decoration: overline;
+    color: blue;
+}
+a:active {
+    text-decoration: underline;
+    color: red;
+}
+a:focus {
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: underline;
+}
+p#main-info {
+    border: dashed red 2px;
+}
+p{
+    margin: 0;
+}
+p:last-child a {
+    color: greenyellow;
+}
+p:last-child a:hover {
+    color: steelblue;
+}
+body p:last-child{
+    margin-top: 1em;
+}
+/*---------------------------------------*/
+@media print {
+    *{
+        color: black !important;
+    }
+    a[href^='#']{
+        display: none;
+    }
+    p#main-info {
+        border: dashed black 2px;
+    }
+    a[href^='http']::before{
+        content: url("extref.png");
+        opacity: 0;
+    }
+}
+
+/*
+способы организации порядка DIV-ов:
+1) flex
+2) display: table-footer, table-body
+3) дублирование блоков (меню-контент-меню)
+*/
+/*
+найти макет -> сделать сайт
+*/

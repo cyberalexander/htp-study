@@ -1,0 +1,23 @@
+body{background: #eeeeee;}
+#article p {
+    font-family: "Times New Roman", "Arial Hebrew Scholar", sans-serif;
+    font-size: 1.2em;
+}
+#images-wrapper{
+    width: 24em;
+    height: 25em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+img:not(:first-of-type){width: 12.5em;}
+img:first-of-type{width: 16em;}
+#container img{position: absolute;}
+#container img[src="No_smoking.png"]{z-index: 22; left: 4em; top: 2em;}
+#container img[src="biohazard.png"]{z-index: 11;}
+#container img[src="Man-and-woman.png"]{z-index: 11;right: 0;}
+#container img[src="Yin_and_Yang.png"]{z-index: 11;left: 6em;top: 10.5em;}
+#container img:hover:not(:first-of-type){z-index: 44;}
+#container img[src="No_smoking.png"]:hover{z-index: 0;}

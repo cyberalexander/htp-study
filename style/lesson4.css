@@ -1,0 +1,53 @@
+body {
+    background-color: darkcyan;
+    font-family: "American Typewriter", "Arial", SansSerif;
+}
+header{
+    background-color: white;
+}
+header h1 {
+    text-align: center;
+    border: dashed cornflowerblue 4px;
+}
+header img {
+    width: 40px;
+    text-align: right;
+}
+img {
+    width: 300px;
+    float: left;
+    margin: 5px;
+}
+div.container {
+    background: url('../../htp-study/images/F0F0FF.png') 0 top repeat-y;
+    background-size: 15em;
+}
+div.body{
+    margin-left: 15em;
+}
+div.body p, div.body img {
+    padding: 1em;
+}
+div.body p:nth-child(even) {
+    background-color: palegreen;
+}
+div.body img:first-child {
+    float: right;
+}
+div.body img.last_img {
+    float: right;
+}
+nav {
+    width: 15em;
+    height: 100%;
+    float: left;
+}
+ul {
+    list-style-image: url('../images/smile.gif');
+    border: solid aqua 2px;
+}
+ul li {
+    cursor: pointer;
+    border: solid white 2px;
+    margin: 5px;
+}

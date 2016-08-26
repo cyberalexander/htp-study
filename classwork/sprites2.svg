@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<defs>
+
+  <style><![CDATA[
+    .sprite { display: none; }
+    .sprite:target { display: inline; }
+  ]]></style>
+
+</defs>
+
+<g class="sprite" id="circle">
+  <ellipse cy="50" cx="50" ry="45" rx="45" stroke-width="5" stroke="#00ff00" fill="#00ff00" fill-opacity="0.75" />
+</g>
+
+<g class="sprite" id="square">
+  <rect y="5" x="5" width="90" height="90" stroke-width="5" stroke="#ff0000" fill="#ff0000" fill-opacity="0.75" />
+</g>
+
+<g class="sprite" id="triangle">
+  <path d="M20,7 L92,50 L6,93 z" stroke-width="5" stroke="#0000ff" fill="#0000ff" fill-opacity="0.75" />
+</g>
+
+</svg>

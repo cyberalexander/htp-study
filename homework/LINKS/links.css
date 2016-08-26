@@ -1,0 +1,102 @@
+/*----------------------------- MAIN STYLES---------------------------------------*/
+body {
+    background-color: lightyellow;
+    margin: 0 10% 0 10%;
+}
+a {
+    color: forestgreen;
+}
+h3{
+
+}
+div.firstExample,
+div.secondExample,
+div.thirdExample,
+div.fourthExample,
+div.fifthExample{
+    text-align: center;
+}
+hr{
+    clear: both;
+}
+div.fourthExample>p>span:nth-child(even){
+    color: red;
+}
+/*------------------------------ FIRST EXAMPLE ------------------------------------*/
+table{
+    display: inline;
+}
+td:not(:last-child){
+    border-right: solid 3px red;
+}
+td{
+    padding: 5px;
+}
+/*------------------------------ SECOND EXAMPLE ------------------------------------*/
+ul{
+    padding-left: 0;
+}
+ul>li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+}
+li:not(:first-child){
+    border-left: solid 3px red;
+}
+/*------------------------------ THIRD EXAMPLE ------------------------------------*/
+div.thirdExample>div.container>p {
+    display: inline;
+    padding: 5px;
+}
+div.thirdExample>div.container>p:nth-child(n+1):not(:last-child){
+    border-right: solid 3px red;
+}
+div.thirdExample{
+    padding-bottom: 10px;
+}
+/*------------------------------ FOURTH EXAMPLE ------------------------------------*/
+/* HELP HELP HELP - помогите, пожалуйста, выровнять элементы по-центру */
+div.footer{
+    clear: both;
+}
+div.fourthExample{
+    padding-bottom: 10px;
+}
+div.fourthExample>div.container{
+    overflow: hidden;
+    display: inline-block;
+}
+div.fourthExample>div.container>*{
+float: left;
+}
+div.fourthExample>div.container>div{
+padding: 5px;
+}
+div.fourthExample>div.container>div:not(:last-child){
+border-right: solid 3px red;
+}
+/*------------------------------ FIFTH EXAMPLE ------------------------------------*/
+div.fifthExample>p.container>a {
+    padding: 5px;
+}
+div.fifthExample>p.container>a:nth-child(-1n+4){
+    border-right: solid 3px red;
+}
+div.fifthExample{
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

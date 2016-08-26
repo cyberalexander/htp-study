@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FONT_GWF</title>
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Ruslan+Display|Underdog&subset=cyrillic" rel="stylesheet"/>
+    <style>
+        body{
+            background-color: azure;
+            font-size: 16px;
+            width: 100%;
+        }
+        .container{
+            width: 80%;
+            margin-left: 15%;
+        }
+        .header{
+            background-color: yellow;
+            border: 5px solid darkblue;
+            font-family: 'Ruslan Display', cursive;
+            letter-spacing: 10px;
+            padding: 10px;
+            text-align: center;
+            width: inherit;
+        }
+        .body{
+            border: 5px groove slateblue;
+            font-family: 'Underdog', cursive;
+            margin-top: 10px;
+            padding: 10px;
+            text-align: left;
+            width: inherit;
+            word-spacing: 1em;
+        }
+        .back-img{
+            background-image: url('/Sites/0017375/media/skrip.gif');
+        }
+        p#first-paragraph{
+            font-family: 'Bad Script', cursive;
+            line-height: 2em;
+            text-align: right;
+            background-image: url('/Sites/0017375/media/SG1998.jpg');
+            background-repeat: no-repeat;
+            background-position: center center
+        }
+        p#last-paragraph{
+            text-align: justify;
+        }
+        #specific-border-1{
+            border: 3px ridge green;
+            white-space: nowrap
+        }
+        .css-class{
+            border: 2px outset darkslateblue;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>
+            Понятие о стилях CSS
+        </h1>
+    </div>
+    <div class="body">
+        <p id="first-paragraph">
+            Для создания представления Web-страниц предназначена технология каскадных
+            таблиц стилей <span id="specific-border-1">(Cascading Style Sheets, CSS)</span>, или просто таблиц стилей. Таблица
+            стилей содержит набор правил (стилей), описывающих оформление самой Web-
+            страницы и отдельных ее фрагментов. Эти правила определяют цвет текста и вы-
+            равнивание абзаца, отступы между графическим изображением и обтекающим его
+            текстом, наличие и параметры рамки у таблицы, цвет фона Web-страницы и многое
+            другое.
+        </p>
+        <p style="text-align: center">
+            Каждый стиль должен быть привязан к соответствующему элементу Web-страницы
+            (или самой Web-странице). После привязки описываемые выбранным стилем пара-
+            метры начинают применяться к данному элементу. Привязка может быть явная,
+            когда мы сами указываем, какой стиль к какому элементу Web-страницы привязан,
+            или неявная, когда стиль автоматически привязывается ко всем элементам
+            Web-страницы, созданным с помощью определенного тега.
+            Таблица стилей может храниться прямо в HTML-коде Web-страницы или в отдель-ном
+            файле. Последний подход более соответствует концепции Web 2.0; как мы помним
+            из главы 1, она требует, чтобы содержимое и представление Web-страницы были
+            разделены. Кроме того, отдельные стили можно поместить прямо в тег HTML,
+            создающий элемент Web-страницы; такой подход используется сейчас до-вольно
+            редко и, в основном, при экспериментах со стилями.
+            Таблицы стилей пишут на особом языке, который так и называется — <span class="css-class">CSS</span>.
+            Стан-дарт, описывающий первую версию этого языка (<span class="css-class">CSS 1</span>), <span style="white-space: nowrap">появился еще в 1996 году. В настоящее</span> время широко поддерживается и применяется на практике
+            стандарт <span class="css-class">CSS 2</span> и ведется разработка стандарта <span class="cs-class">CSS 3</span>, ограниченное подмножество
+            которого уже поддерживают многие Web-обозреватели.
+        </p>
+        <p class="back-img">
+            Каждый стиль должен быть привязан к соответствующему элементу Web-страницы
+            (или самой Web-странице). После привязки описываемые выбранным стилем пара-
+            метры начинают применяться к данному элементу. Привязка может быть явная,
+            когда мы сами указываем, какой стиль к какому элементу Web-страницы привязан,
+            или неявная, когда стиль автоматически привязывается ко всем элементам
+            Web-страницы, созданным с помощью определенного тега.
+            Таблица стилей может храниться прямо в HTML-коде Web-страницы или в отдель-ном
+            файле. Последний подход более соответствует концепции Web 2.0; как мы помним
+            из главы 1, она требует, чтобы содержимое и представление Web-страницы были
+            разделены. Кроме того, отдельные стили можно поместить прямо в тег HTML,
+            создающий элемент Web-страницы; такой подход используется сейчас до-вольно
+            редко и, в основном, при экспериментах со стилями.
+            Таблицы стилей пишут на особом языке, который так и называется — <span class="css-class">CSS</span>.
+            Стан-дарт, описывающий первую версию этого языка (<span class="css-class">CSS 1</span>), появился еще в 1996 году. В настоящее время широко поддерживается и применяется на практике
+            стандарт <span class="css-class">CSS 2</span> и ведется разработка стандарта <span class="cs-class">CSS 3</span>, ограниченное подмножество
+            которого уже поддерживают многие Web-обозреватели.
+        </p>
+        <div >
+            <p id="last-paragraph">
+                Как раз <span class="css-class">CSS 3</span> (точнее, то его подмножество, поддерживаемое современными
+                про-граммами) мы и будем изучать.
+            </p>
+        </div>
+    </div>
+    <div>
+        <img src="../../images/skobki2.png" alt="">
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

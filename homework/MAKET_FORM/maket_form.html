@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maket Form</title>
+    <link rel="stylesheet" href="maket_form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div id="form-header">
+                <h4>Для публикации вашей статьи, заполните пожалуйста следующую форму:</h4>
+            </div>
+            <!-- action="http://fe.it-academy.by/TestForm.php -->
+            <form action="#" target="_blank" method="get">
+                <div id="nameOfarticle">
+                    Название статьи:
+                </div>
+                <div id="nameOfArticleInput">
+                    <input type="text"/>
+                </div>
+
+                <div id="typeOfArticle">
+                    Рубрика:
+                </div>
+                <div id="typeOfArticleList">
+                    <select name='articleTypes'>
+                        <option value="1">компьютерная техника</option>
+                        <option value="2">графика и дизайн</option>
+                        <option value="3" selected>программирование</option>
+                    </select>
+                </div>
+
+                <div id="publication">
+                    Публикация:
+                </div>
+                <div id="publicationRadioList">
+                    <ul>
+                        <li>
+                            <input type="radio" name="pub" value="1"/>
+                            на сайте
+                        </li>
+                        <li>
+                            <input type="radio" name="pub" value="2"/>
+                            в журнале
+                        </li>
+                        <li>
+                            <input type="radio" name="pub" value="3"/>
+                            на сайте и в журнале
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="allowCommentary">
+                    Разрешить комментарии:
+                </div>
+                <div id="allowCommentaryCheckBox">
+                    <input type="checkbox" checked>
+                </div>
+
+                <div id="content">
+                    Текст статьи:
+                </div>
+                <div id="contentField">
+                    <textarea name="contentFieldArea" id="contentFieldArea" rows="8"></textarea>
+                </div>
+
+                <div id="submitButton">
+                    <button type="submit">Опубликовать</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

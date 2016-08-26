@@ -1,0 +1,69 @@
+body{
+
+}
+div.container-outer{
+    background-color: aquamarine;
+}
+div.container-inner{
+    background-color: #eeeeee;
+    margin-right: 200px;
+}
+div[class^="head"], [class$="oter"]{
+    text-align: center;
+    background-color: whitesmoke;
+}
+div.nav{
+    float: left;
+    width: 200px;
+}
+div.main-content{
+    margin-left: 200px;
+    background-color: antiquewhite;
+    padding: 5px;
+}
+div.terminator{
+    clear: both;
+}
+div[class*="anner"]{
+    width: 200px;
+    float: right;
+}
+div.footer{
+    clear: both;
+}
+div.barak>a>img {
+    float: left;
+    margin: 5px;
+    /*visibility: hidden;*/
+}
+div.barak>a>img:target {
+    visibility: visible;
+}
+div.barak>a:target{
+    visibility: hidden;
+}
+h1, h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+
+li:nth-child(-3n+10)>a {
+    color: red;
+}
+h3:hover{
+    cursor: cell;
+}
+h3:active{
+    color: greenyellow;
+}
+a:focus{
+    color: white;
+}
+p::first-line {
+    color: green;
+}
+p::first-letter, h1::first-letter{
+    color: darkviolet;
+    font-weight: bold;
+}
