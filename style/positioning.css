@@ -1,0 +1,45 @@
+.body{
+    background-color: cornsilk;
+}
+.container{
+    outline: solid 1px black;
+    padding: 0.5em;
+    margin: 1em;
+}
+.container img[src$='icecreams.jpeg']{
+    outline: solid 1px red;
+    width: 25em;
+    position: fixed;
+    left: 2em;
+    right: 2em;
+    top: 2em;
+}
+.container p{
+    outline: solid 1px lightgreen;
+    padding: 0.5em;
+}
+/*--------------------------------------------------------------*/
+.block1, .block2{
+    display: inline-block;
+}
+.block1 {
+    margin-right: 3em;;
+    width: 100px;
+    height: 100px;
+    background-color: #FF8080;
+}
+.block1:hover {
+    background-color: #FF0000;
+}
+.block1:hover + .block2 {
+    background-color: yellow;
+}
+.block2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-top: 50px;
+}
+
+
+

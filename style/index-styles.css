@@ -1,0 +1,33 @@
+.container{
+    outline: dotted green 2px;
+    width: 40em;
+    height: 20em;
+    margin: auto;
+}
+.linked-images img{
+    width: 20em;
+}
+.list{
+    text-align: center;
+    list-style: hiragana;
+    font-family: "Apple Chancery", "Apple Braille", Arial, sans-serif;
+    font-size: 1.5em;
+}
+.list li{
+    display: inline;
+    margin: 0 3em;
+}
+.linked-images{
+    text-align: center;
+}
+.linked-images #pic1,
+  .linked-images #pic2,
+  .linked-images #pic3{
+      display: none;
+  }
+
+.linked-images #pic1:target,
+.linked-images #pic2:target,
+.linked-images #pic3:target{
+    display: block;
+}
