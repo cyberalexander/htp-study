@@ -1,38 +1,54 @@
 <?xml version="1.0"?>
 <svg id="svg-img" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
-
     <defs>
-
         <style><![CDATA[
-            .sprite { display: none; }
-            .sprite:target { display: inline; }
+            #house { display: none; }
+            #house:target { display: inline; }
+
+            #roof{
+                stroke: saddlebrown;
+                fill: chocolate;
+            }
+            #roof:hover {fill: red; stroke: silver; stroke-width: 5;}
+
+            #house-body{
+                stroke: saddlebrown;
+                fill: navajowhite;
+            }
+            #house-body:hover {fill: orange; stroke: black; stroke-width: 5;}
+
+            #window{
+                 stroke: black;
+                 fill: blue;
+            }
+            #window:hover {fill: yellow; stroke: white; stroke-width: 5;}
+
+            #door{
+                stroke: black;
+                fill: yellow;
+            }
+            #door:hover {fill: green; stroke: white; stroke-width: 5;}
+
+            #foundation{
+                stroke: saddlebrown;
+                fill: burlywood;
+            }
+            #foundation:hover {fill: blue; stroke: green; stroke-width: 5;}
+
+            #ground{
+                fill: greenyellow;
+            }
+            #ground:hover {fill: blueviolet; stroke: blue; stroke-width: 5;}
           ]]>
         </style>
-
     </defs>
-    <!--helloworld-->
 
-    <g class="sprite" id="roof">
-        <polygon points='180,300 350,200 520,300' stroke="red" fill="chocolate"/>
+    <g class="sprite" id="house">
+        <polygon id="roof" points='180,300 350,200 520,300'/>
+        <rect id="house-body" x="200" y="300" width="300" height="150"/>
+        <rect id="window" x="240" y="320" width="90" height="70"/>
+        <rect id="door" x="380" y="320" width="80" height="130"/>
+        <rect id="foundation" x="190" y="450" width="320" height="10"/>
+        <rect id="ground" x="0" y="460" width="700" height="40"/>
     </g>
-    <g class="sprite" id="house-body">
-        <rect x="200" y="300" stroke='#FF0000' fill="yellow"/>
-    </g>
-    <g class="sprite" id="house-foundament">
-        <rect x="194" y="450" stroke='#FF0000' fill="yellow"/>
-    </g>
-    <g class="sprite" id="ground">
-        <rect x="0" y="460" width="700" height="40" stroke='green' fill="greenyellow"/>
-    </g>
-
-
-
-
-    <!--<g style="fill-opacity:1;">-->
-        <!--<line x1="0" y1="0" x2="10" y2="10" stroke="red" stroke-width="1" />-->
-        <!--<ellipse cx="5" cy="5" rx="4" ry="2" fill="yellow" stroke="blue" />-->
-    <!--</g>-->
-    <!--<g style="fill-opacity:1;">-->
-    <!--</g>-->
-    <!--<polygon points='5,125 80,140 15,155' stroke="red" fill="yellow"/>-->
 </svg>

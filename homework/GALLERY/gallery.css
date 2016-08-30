@@ -1,0 +1,47 @@
+.container{
+    position: relative;
+}
+.gallery-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.3em;
+    word-spacing: 0.8em;
+    color: black;
+    font-size: 1.5em;
+}
+.gallery-header h1{
+    margin: 0.2em 0 0.5em 0;
+}
+.gallery-content{
+    margin-top: 5em;
+    width: 35em;
+    height: 40em;
+    padding: 1em 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: scroll;
+    text-align: center;
+    background: ghostwhite;
+}
+iframe{
+    display: block;
+    width: 30em;
+    height: 16em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery-content ul{
+    list-style-type: none;
+    margin: 0.2em 0 1em 0;
+    padding: 0;
+}
+.gallery-content ul li{
+    display: inline-block;
+}
+.gallery-content ul li{
+    padding: 0 1em;
+}
