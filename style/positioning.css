@@ -42,4 +42,32 @@
 }
 
 
+/*--------------------------------------------------------------*/
+input.smile-checkbox{
+    visibility: hidden;
+}
+input.smile-checkbox::before{
+    visibility: visible;
+    content: url("../images/smiles-sprite.jpg");
+    position: relative;
+    top: -5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -45,7 +45,7 @@ img[src$='Turtle.png']:hover{
     to {color: white;}
 }
 .block2{
-    animation: text-animation_1 5s infinite;
+    animation: text-animation_1 3s infinite;
 }
 /*TEXT Animation styles ------------------------------------*/
 
@@ -83,3 +83,22 @@ img[src$='Turtle.png']:hover{
     background: url("./deer-sprite.png") 0 0;
 }
 /*Sprite Animation styles ----------------------------------*/
+
+.container:hover .row > .block1{
+    background-image: linear-gradient(0deg, green, black);
+    color: #ffffff;
+}
+.container:hover .row > .block2{
+    box-shadow: 0 0 4em white inset;
+}
+@keyframes hoverblock-3-anim{
+    from {background-color: #fff; color: black;}
+    25% {background-color: #FF0000; color: blue;}
+    50% {background-color: #888888; color: greenyellow;}
+    75% {background-color: turquoise; color: #09411a;}
+    to {background-color: black; color: #fff;}
+}
+.container:hover .row > .block3{
+    background-image: none;
+    animation: hoverblock-3-anim 2s infinite;
+}
