@@ -8,6 +8,11 @@
 .row{
     margin-bottom: 3em;
 }
+.row-anim-pics div{margin: 0 2em;}
+.row-anim-pics div:last-child{box-shadow: 2em 2em 2em gray;}
+.animated-pic-container{
+    text-align: center;
+}
 .row > div{
     display: inline-block;
 }
@@ -28,7 +33,53 @@ div[class^='block']{
             red 70%, blue 70%, #09411a
     );
 }
-img:hover{
-    transform: scaleY(2);
+img[src$='Turtle.png']:hover{
+    transform: scaleX(2) scaleY(2) rotate(-20deg);
     transition-duration: 2s;
 }
+/*TEXT Animation styles ------------------------------------*/
+@keyframes text-animation_1 {
+    from {color: black;}
+    30% {color: blue;}
+    60% {color: greenyellow;}
+    to {color: white;}
+}
+.block2{
+    animation: text-animation_1 5s infinite;
+}
+/*TEXT Animation styles ------------------------------------*/
+
+/*Sprite Animation styles ----------------------------------*/
+@keyframes alle-anim_1 {
+    from{
+        background: url("./sprite_anim.jpg") -25px -58px;
+    }to{
+             background: url("./sprite_anim.jpg") -280px -58px;
+     }
+}
+#animated-picture{
+    float: left;
+    transform: skewX(-5deg) skewY(-5deg) rotate(5deg);
+    /*border: solid 1px black;*/
+    width: 120px;
+    height: 200px;
+    animation: alle-anim_1 0.1s steps(2) infinite;
+    background: url("./sprite_anim.jpg") -25px -58px;
+}
+
+@keyframes alle-anim_2 {
+    from{
+        background: url("./deer-sprite.png") 0 0;
+    }to{
+         background: url("./deer-sprite.png") -855px 0;
+     }
+}
+#animated-picture_1{
+    float: right;
+    /*border: solid 1px black;*/
+    width: 145px;
+    height: 233px;
+    animation: alle-anim_2 0.8s steps(6) infinite;
+    background: url("./deer-sprite.png") 0 0;
+}
+/*Sprite Animation styles ----------------------------------*/
