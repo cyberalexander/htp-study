@@ -1,0 +1,74 @@
+body{
+    background-color: gainsboro;
+}
+h1, h2, h3, h4 {
+    text-align: center;
+    font-family: 'Ruslan Display', cursive;
+    text-shadow: 2px 2px 2px gray, 0 0 0.5em blue;
+}
+article h3 {
+    margin-top: 0;
+    padding-top: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.main-content{
+    display: flex;
+    flex-direction: row;
+}
+header{
+}
+footer{
+}
+.main-content section {
+    flex-grow: 1;
+    width: 40em;
+    flex-basis: 40em;
+    background-color: magenta;
+}
+.main-content article{
+    flex-grow: 1;
+    flex-basis: 80%;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+.main-content article img{
+    float: left;
+    width: 16em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+section ul li{
+    font-family: 'Underdog', cursive;
+    line-height: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    outline: solid 1px green;
+}
+section{
+    outline: solid 1px red;
+}
+article{
+    outline: solid 1px black;
+}
+footer{
+    outline: solid 1px blue;
+}
