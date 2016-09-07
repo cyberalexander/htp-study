@@ -1,5 +1,5 @@
 body{
-    background-color: gainsboro;
+    background-color: ghostwhite;
 }
 h1, h2, h3, h4 {
     text-align: center;
@@ -16,59 +16,155 @@ article h3 {
 }
 .main-content{
     display: flex;
+    position: relative;
     flex-direction: row;
 }
-header{
+header, footer {
+    background-color: cyan;
+    padding: 1%;
 }
-footer{
-}
-.main-content section {
-    flex-grow: 1;
-    width: 40em;
-    flex-basis: 40em;
-    background-color: magenta;
+.main-content section.navigation-section {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 15em;
+    background: url('rugby-ball.png') top left no-repeat,
+                url('rugby-ball.png') top right no-repeat,
+                url('rugby-ball.png') bottom left no-repeat,
+                url('rugby-ball.png') bottom right no-repeat yellow;
+    background-size: 40px;
 }
 .main-content article{
+    background: url('rugby-ball.png') repeat-y;
+    background-position: 98% 0%;
     flex-grow: 1;
-    flex-basis: 80%;
     padding-bottom: 2em;
     padding-right: 2em;
     padding-left: 2em;
+}
+#balls-in-corners{
+    z-index: 5;
+    position: absolute;
+    left: 15em;
+    right: 12%;
+    top: 0%;
+    bottom: 0%;
+    background: url('rugby-ball.png') top left no-repeat,
+                url('rugby-ball.png') top right no-repeat,
+                url('rugby-ball.png') bottom left no-repeat,
+                url('rugby-ball.png') bottom right no-repeat;
+    background-size: 40px;
+}
+.main-content aside {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 12%;
+    background: url('rugby-ball.png') top left no-repeat,
+                url('rugby-ball.png') top right no-repeat,
+                url('rugby-ball.png') bottom left no-repeat,
+                url('rugby-ball.png') bottom right no-repeat greenyellow;
+    background-size: 40px;
 }
 .main-content article img{
     float: left;
     width: 16em;
     margin-right: 1em;
+    margin-left: 1em;
     margin-bottom: 1em;
 }
 section ul li{
     font-family: 'Underdog', cursive;
     line-height: 2em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-header{
-    outline: solid 1px green;
+.main-content section.advertising-section {
+    text-align: center;
 }
-section{
-    outline: solid 1px red;
+/*-----------------------------*/
+#entering-link-container{
+    z-index: 10;
+    background-color: greenyellow;
+    border: solid 0.2em slategrey;
+    border-radius: 0.5em;
+    box-shadow: 0.4em 0.4em 0.5em dimgray;
+    /*color: dimgray;*/
+    height: 3em;
+    padding: 0.5em;
+    position: fixed;
+    right: 3em;
+    text-align: center;
+    top: 2em;
+    width: 8em;
 }
-article{
-    outline: solid 1px black;
+#entering-link-container a {
+    line-height: 1px;
+    text-transform: uppercase;
+    font-size: 1.1em;
 }
-footer{
-    outline: solid 1px blue;
+/*-----------------------------*/
+@media screen and (max-width:45em){
+    header, footer{
+        display: none;
+    }
+    .main-content{
+        flex-direction: column;
+        position: static;
+    }
+    .main-content section.navigation-section {
+        flex-basis: 100%;
+        order: 2;
+        background-color: transparent;
+    }
+    .main-content article{
+        background: none;
+        padding-top: 1em;
+        order: 1;
+    }
+    #balls-in-corners{position: static;}
+    .main-content aside {
+        flex-basis: 100%;
+        order: 3;
+    }
+    .main-content section.navigation-section, .main-content article{
+        padding-bottom: 1em;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+    .main-content article img{
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    section.navigation-section ul{padding-left: 0;}
+    section.navigation-section ul li{
+        display: inline;
+    }
+    .main-content section.advertising-section a {
+        margin: 0 1em;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*header{*/
+    /*outline: solid 1px green;*/
+/*}*/
+/*section{*/
+    /*outline: solid 1px red;*/
+/*}*/
+/*article{*/
+    /*outline: solid 1px black;*/
+/*}*/
+/*footer{*/
+    /*outline: solid 1px blue;*/
+/*}*/
