@@ -111,3 +111,8 @@ img.scalable{
     transform: translateY(20em);
     transition: 2s;
 }
+
+.container:hover div div#animated-picture{
+    transform: translateX(20em);
+    transition: 2s;
+}
